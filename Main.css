@@ -1,0 +1,210 @@
+@font-face{
+	font-family:"Calibri";
+	src: url("desktop/Calibri.ttf") format("truetype");
+	font-style: normal; 
+}
+body, html{
+	background-color: #232328;
+	font-family: Calibri;
+    height: 100vh;
+	z-index:1;
+	padding: 0;
+}
+.search{
+ background-color: #232328;
+ padding: 8px;
+}
+.line1{
+	background-color:#1b1b1f;
+	height: 3px;
+	margin:0;
+	border:0;
+}
+.form-control{
+	background-color: #1b1b1f;
+	border:none;
+	border-radius: 25px 0 0 25px;
+	color: white;
+}
+.me-2 {
+margin-right:0 !important;}
+.btn{
+	border-radius:0 25px 25px 0;
+	padding-left: 6px;
+	height:40px;
+	background-color:#1b1b1f;
+	border:none;
+}
+.submit{
+	height:100%;
+}
+.btn:hover{
+	background-color: #6b7fd7;
+}
+.btn.btn-outline-success:active{
+	background-color: #ffffff;
+}
+.blink{
+	background-color: #232328;
+	color: #232328;
+	display: flex;
+	width:274.13px;
+}
+.form-control:focus{
+	background-color: #2b2b31;
+	color: white;
+	box-shadow:none;
+}
+header{
+	display: flex;
+	align-items: center;
+	background-color: #33333a;
+}
+.card{
+	margin:5px;
+	width:247.13px;
+	background-color: #121215;
+	border:none;
+	-webkit-user-select:none;
+	user-select:none;
+}
+.card:hover{
+	background-color: #18181c;
+}
+.card-body{
+	padding: 8px;
+	display: inline-flex;
+	align-items: center;
+}
+.no_avatar{
+	border-radius: 25px;
+	float:left;
+}
+.title{
+	white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    padding: 5px; /* Поля */
+    text-overflow: ellipsis; /* Многоточие */
+	color:white;
+	font-family: Calibri;
+src: url(desktop/calibri.ttf); /* Путь к файлу со шрифтом */
+	float:left;
+	margin:0;
+	padding-bottom:0;
+}
+.last-message{
+	white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    padding: 5px; /* Поля */
+    text-overflow: ellipsis; /* Многоточие */
+	color:#707072;
+	font-family: Calibri;
+src: url(desktop/calibri.ttf); /* Путь к файлу со шрифтом */
+	float:right;
+	margin:0;
+	width: 195px;
+	padding-top:0;
+}
+.text-chat{
+	clear:left
+}
+.text-wait-menu{
+	color:#6b7fd7;
+	font-size: 56px;
+	display: flex;	
+}
+.messages-list li{
+	list-style-type: none;
+}
+.messages-list{
+	margin-left: 0; 
+    padding-left: 0;
+	overflow: scroll;
+	overflow-x:hidden; 
+	margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+	width:274.13px;
+}
+.chates{
+	background-color: #232328;
+	display: flex;
+	width:274.13px;
+}
+.main{
+	display: flex;
+	max-width:100%;
+	flex-grow: 1;
+	border-top: 3px solid #1b1b1f;
+}
+.menu{
+	width:100%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	background-color: #33333a;
+}
+.wait-menu{
+	display: flex;
+	flex-wrap:wrap;
+	text-align:center;
+	padding-left:5px;
+	flex-direction: column;
+	align-items: center;
+	width:100%;
+}
+.post-click-chat{
+	background-color: #6b7fd7;
+	-webkit-user-select:none;
+	user-select:none;
+	color:white;
+}
+.post-click-chat:hover{
+	background-color: #6b7fd7;
+}
+.polsovatel{
+	display: flex;
+    align-items: center;
+}
+.white-text{
+	color:white;
+}
+@font-face{
+	font-family:"Galiver Sans Obliques";
+	src: url("desktop/GaliverSansObliquesBold.ttf") format("truetype");
+	font-style: normal; 
+}
+.h1{
+	color: white;
+	font-family:"Galiver Sans Obliques";
+	margin: 0;
+	margin-left:5px;
+	margin-right: 5px;
+	font-size: 35px;
+}
+.Qwerty a{
+	text-decoration: none;
+}
+.Qwerty{
+	display: flex;
+    align-items: center;
+}
+.bg-secondary{
+	margin-bottom: -10px;
+}
+.vertborder{
+  border-left: 1px solid #2d2d34;
+  height: 100%;
+  width: 1px;
+}
+.container-1{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	margin-right: 0;    
+	display: flex;
+    flex-direction: column;
+}
