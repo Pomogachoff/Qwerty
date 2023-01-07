@@ -1,0 +1,5 @@
+#2b2b2f
+#6B7FD7
+#EBF2FA
+font-family:GaliverSansObliques.ttf;
+	src url(desktop/GaliverSansObliques.ttf);
