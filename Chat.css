@@ -27,7 +27,7 @@
 .message{
     border-radius: 10px;
 	background-color: #444451;
-	max-width: 250px;
+	max-width: 300px;
 	margin-top:8px;
 	margin-left:5px;
 }
@@ -36,7 +36,7 @@
 	margin:0;
 }
 .message-content{
-	max-width: 250px;
+	max-width: 300px;
 }
 .message-file-body{
 	max-width: 400px;
@@ -101,7 +101,6 @@ display: none;
 	background-color: #2d2d34;
 }
 .code-button{
-	max-width: 36px;
     display: flex;
     align-items: center;
     position: sticky;
@@ -110,9 +109,6 @@ display: none;
     border: none;
 	border-radius:0;
 	padding:0 2px 0 2px;
-}
-.code-button img{
-	max-width: 100%;
 }
 .dropup .dropdown-toggle::after{
 	display:none;
@@ -132,7 +128,6 @@ display: none;
 	background-color: #2d2d34;
 }
 .send-message-button{
-	max-width: 36px;
     display: flex;
     align-items: center;
     position: sticky;
