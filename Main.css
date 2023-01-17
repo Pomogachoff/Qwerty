@@ -78,7 +78,7 @@ header{
 	align-items: center;
 }
 .no_avatar{
-	border-radius: 25px;
+	border-radius: 100%;
 }
 .no_avatar img{
 	width: 100%;
@@ -106,11 +106,8 @@ src: url(desktop/calibri.ttf); /* Путь к файлу со шрифтом */
 src: url(desktop/calibri.ttf); /* Путь к файлу со шрифтом */
 	float:right;
 	margin:0;
-	width: 195px;
+	width: 180px;
 	padding-top:0;
-}
-.text-chat{
-	clear:left
 }
 .text-wait-menu{
 	color:#6b7fd7;
