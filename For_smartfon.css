@@ -1,0 +1,38 @@
+/* ТУТ главная менюшка */
+
+@media (max-width: 600px) {
+  .menu{
+	display: none;
+  }
+  .vertborder{
+	display: none; 
+  }
+  header{
+	display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
+  .blink{
+	width: 100%; 
+  }
+  .navbar>.container-fluid{
+	display: block;
+	width: 100vw; 
+  }
+  .chates{
+	width: 100%;
+  }
+  .messages-list{
+	width: 100%;
+  }
+  .Qwerty{
+    margin-bottom: 5px;
+  }
+  .card{
+	width: 98vw;
+  }
+  .text-chat{
+	display: flex;
+    flex-direction: column;
+  }
+}
