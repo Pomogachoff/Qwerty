@@ -1,0 +1,73 @@
+/* ТУТ менюшка чата */
+@media (max-width: 600px) {
+  .vertborder{
+	display: none; 
+  }
+  header{
+	display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
+  .blink{
+	display:none;
+  }
+  .Qwerty{
+    margin-bottom: 5px;
+  }
+  .card{
+	width: 98vw;
+  }
+  .text-chat{
+	display: flex;
+    flex-direction: column;
+  }
+  .chates{
+	  display:none;
+  }
+  .message{
+	  max-width:78vw;
+  }
+  .message-file{
+	  max-width:95vw;
+  }
+  .options-menu{
+	  border-radius: 0;
+	  outline:none;
+	  width:100vw;
+	  height:100vh;
+	  margin: 0;
+  }
+  .profile-button-text {
+    color: #6280db;
+    margin: 0;
+  font-size: 30px;
+  }
+  .options-menu-main{
+	  border-radius: 0;
+  }
+  .block-button-text {
+    color: #e35252;
+    margin: 0;
+    font-size: 30px;
+  }
+  .report-button-text {
+    color: #ffb126;
+    margin: 0;
+    font-size: 30px;
+  }
+  .message-text{
+	  font-size: 21px;
+  }
+  .my-message{
+	  font-size: 21px;
+  }
+  .name-in-menu{
+	  font-size:32px;
+  }
+  .status-pols-online{
+	  font-size: 21px;
+  }
+  .options-menu-main-text{
+	  font-size: 32px;
+  }
+}
