@@ -1,6 +1,109 @@
 .window-background{
 	position: fixed;
+    to.window-background{
+	position: fixed;
     top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #2d2d34;
+    opacity: 0.5;
+}
+.options-menu{
+	background-color: #232328;
+    margin-top: 40px;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    height: 90vh;
+    position: fixed;
+    width: 620px;
+    border-radius: 25px;	
+	outline: solid;
+    outline-color: #232328;
+}
+.options-window{
+	display: flex;
+    flex-direction: column;
+    z-index: 3;
+    max-height: 100vh;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+}
+.pols-name-in-menu{
+	color: white;
+    font-size: 31px;
+}
+.name-in-menu{
+  margin: 0;
+  margin-bottom: -13px;
+}
+.status-pols-online-in-menu{
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 19px;
+    color: #6b7fd7;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.options-menu-header{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+}
+.polsovatel-menu{
+	display: flex;
+    align-items: center;
+}
+.options-menu-main{
+	background-color: #2d2d34;
+	height: 100%;
+    border-radius:0 0 25px 25px;
+}
+.options{
+   list-style-type: none;
+   margin:0;
+   padding-left: 1px;
+   -webkit-user-select: none; 
+   user-select:none;
+}
+.options-menu-button{
+	display: flex;
+    align-items: center;
+}
+.close-options-button{
+	margin-right: 20px;
+}
+.options li:hover{
+	background-color: #303037;
+}
+.options-menu-main-text{
+	color: white;
+	margin: 9px;
+	margin-bottom: 0;
+    font-size: 22px;  
+}
+.profile-button-text{
+	color: #6280db;
+	margin:0;
+	font-size: 21px;
+}
+.block-button-text{
+	color: #e35252;
+	margin:0;
+	font-size: 21px;
+}
+.report-button-text{
+	color: #ffb126;
+	margin:0;
+	font-size: 21px;
+}p: 0;
     left: 0;
     z-index: 2;
     width: 100%;
