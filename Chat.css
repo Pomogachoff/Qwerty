@@ -19,7 +19,6 @@
 	margin:5px 5px 5px 10px;
 }
 .message-body{
-	max-width: 250px;
 	text-align:left;
 	padding:7px;
 	word-wrap: break-word;
@@ -39,7 +38,6 @@
 	max-width: 300px;
 }
 .message-file-body{
-	max-width: 400px;
 	text-align:left;
 	padding:7px;
 }
