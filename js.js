@@ -42,7 +42,122 @@ SendButton.addEventListener(`click`, function(){
        <div class="message-body">
 	    <div class="message-content">
 		 <p class="message-text">${TextInput.value}</p>
+        </div>/* ТУТ параметр отвечаешь за ширину поля ввода */
+let ChatEmpties = document.querySelector(`#emptiness`);
+
+function ChatFooterWidth(){
+let ChatFooter = document.querySelector(`#chat-footer`);
+let ChatMainWidth = document.querySelector(`#chat-main`).offsetWidth;
+let ChatFooterHeight = document.querySelector(`#chat-footer`).clientHeight;
+
+ChatFooter.style.width = `${ChatMainWidth}` + `px`;
+ChatEmpties.style.height = `${ChatFooterHeight}` + `px`
+}; 
+
+let timerId1 = setInterval(ChatFooterWidth, 100);
+
+/*Тут функции внутри чата*/
+let TextInput = document.querySelector(`#MessageTextEnter`);
+let SendButton = document.querySelector(`#message-send-button`);
+let ChatMain = document.querySelector(`#chat-main`);
+let lastMessage = document.querySelector(`#last-message`);
+let OptionsButton = document.querySelector(`#options-button`);
+let OptionsMenu = document.querySelector(`#options-menu`);
+let WindowBackground = document.querySelector(`#window-background`); 
+let ReportWindowBackground = document.querySelector(`#report-window-background`); 
+let ReportMenu = document.querySelector(`#report-menu`);
+let ReportButton = document.querySelector(`#report-button`);
+let CloseOptionsButton = document.querySelector(`#close-options-button`);
+let CloseReportButton = document.querySelector(`#close-report-button`);
+let SendFileButton = document.querySelector(`#file-button`);
+let FileStorage = document.querySelector(`#file-storage`);
+
+SendButton.addEventListener(`click`, function(){
+	if(TextInput.value == `` || TextInput.value == ` `){
+	}else{
+  let TextMessage = `
+ <div class="my-message">
+       <div class="message-body">
+	    <div class="message-content">
+		 <p class="message-text">${TextInput.value}</p>
         </div>
+       </div>
+      </div>
+`;
+document.getElementById('0000000001').textContent = `Вы: ${TextInput.value}`
+    ChatMain.innerHTML += TextMessage;
+	TextInput.value = ``;
+	}
+});
+OptionsButton.addEventListener(`click`, function(){
+	OptionsMenu.classList.remove('d-none');
+});
+WindowBackground.addEventListener(`click`, function(){
+	OptionsMenu.classList.add('d-none');
+});
+ReportWindowBackground.addEventListener(`click`, function(){
+	ReportMenu.classList.add('d-none');
+});
+ReportButton.addEventListener(`click`, function(){
+	ReportMenu.classList.remove('d-none');
+});
+CloseOptionsButton.addEventListener(`click`, function(){
+	OptionsMenu.classList.add('d-none');
+});
+CloseReportButton.addEventListener(`click`, function(){
+	ReportMenu.classList.add('d-none');
+});
+/* SendFileButton.addEventListener(`click`, function(event){
+	console.log(FileStorage.files);
+}) */
+
+/*Тут назначение клавиш*/
+document.addEventListener(`keydown`, function(event){
+	if(event.key == `Enter`){
+		 if(TextInput.value == `` || TextInput.value == ` `){
+	}else{
+  let TextMessage = `
+ <div class="my-message">
+       <div class="message-body">
+	    <div class="message-content">
+		 <p class="message-text">
+        ${TextInput.value}
+         </p>
+        </div>
+       </div>
+      </div>
+`;
+ChatMain.innerHTML += TextMessage;
+document.getElementById('0000000001').textContent = `Вы: ${TextInput.value}`
+	TextInput.value = ``;
+	}
+	}else{};
+});
+
+let flag = false;
+document.addEventListener(`keydown`, function(event){
+	if(event.key == `Shift`)flag = true;
+	if ((event.key == `Z` && flag) || (event.key == `Я` && flag)){
+		flag = false;
+		OptionsMenu.classList.toggle('d-none');
+	  };	
+});
+for (var i = 0; i < 1; i++){	
+
+let PolzName = document.getElementById(`polzovatel-name`).textContent;
+let PolzNameInMenu = document.getElementById(`polzovatel-name-in-menu`);
+let PolzNameInput =`
+<p class="name-in-menu">${PolzName}</p>
+`
+
+PolzNameInMenu.innerHTML += PolzNameInput;
+
+let PolzStatusOnline = `
+<p class="status-pols-online" id="status-pols">В сети</p>
+`
+
+PolzNameInMenu.innerHTML += PolzStatusOnline;
+};
        </div>
       </div>
 `;
