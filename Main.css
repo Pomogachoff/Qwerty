@@ -9,6 +9,7 @@ body, html{
     height: 100vh;
 	z-index:1;
 	padding: 0;
+	overflow: hidden;
 }
 .search{
  background-color: #232328;
@@ -78,7 +79,10 @@ header{
 }
 .no_avatar{
 	border-radius: 25px;
-	float:left;
+}
+.no_avatar img{
+	width: 100%;
+	border-radius: 100%;
 }
 .title{
 	white-space: nowrap; /* Отменяем перенос текста */
@@ -207,4 +211,8 @@ src: url(desktop/calibri.ttf); /* Путь к файлу со шрифтом */
 	margin-right: 0;    
 	display: flex;
     flex-direction: column;
+}
+.chat-button{
+	background-color: #232328;
+    border: none;
 }
